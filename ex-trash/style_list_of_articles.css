@@ -1,27 +1,17 @@
 body {
-	margin: 5px;
+	/*padding-left: 11em;*/
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: white;
 	background-color: #2C4882;
+	margin: 5px;
 }
 
-.background{
+.background {
 	vertical-align: middle;
 	float: left;
 }
 
-.lateral{
-	padding-left: 11em;
-	/*LINK TO ARTICLES_LIST STOP WORKING IF THIS LINE IS ADDED:*/
-	/*position: relative;*/
-	margin-right: 2em;
-	text-align:justify;
-
-	/*SEARCH THE PURPOSE OF THIS:*/
-	/*text-justify: inter-word;*/
-}
-
-ul.navbar li {
+ul.navbar li{
 	color:#2C4882;
 	margin: 0.5em 0;
 	padding: 0.3em;
@@ -37,10 +27,10 @@ ul.navbar {
 
 	background-color: white;
 	text-align:left;
-	padding:8px;
+	padding: 8px;
 }
 
-ul.navbar a {
+ul.navbar a{
 	text-decoration: none;
 }
 
@@ -48,8 +38,19 @@ ul.navbar a:link{
 	color: #2C4882;
 }
 
-ul.navbar a:visited {
+ul.navbar a:visited{
 	color: #2C4882;
+}
+
+.lateral{
+	padding-left: 11em;
+	position:relative;
+	margin-right: 2em;
+}
+
+.lateral .fs{
+	text-align: center;
+	vertical-align: middle;
 }
 
 h1{
@@ -65,31 +66,17 @@ h1 a:hover{
 	text-decoration: underline;
 }
 
-
-.foot_note {
-	border-top: thin dotted #FFF;
-	list-style-type: none;
-
-	background-color: gray;
-	padding-top:15px;
-	padding-bottom:15px;
-
+h4{
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
 	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	width: 100%;
-
+	background-color: red;
 }
 
-.foot_note address{
-	padding-left:15px;
+a{
+	text-decoration: none;
+	color:white;
 }
 
-
-
-
-
-
-
-
-
+a:hover{
+	text-decoration: underline;
+}

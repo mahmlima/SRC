@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>My blog</title>
+		
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style_list_of_articles.css">
+	</head>
+
+	<body>
+		<!-- div geral -->
+		<div class="background">
+
+			<!-- site navigation menu -->
+			<ul class="navbar">
+				<li><a href='javascript:window.history.go(-1);'>Home</a>
+				<li><a href="#" onclick="location.reload(true); return false;">Articles List</a>
+			</ul>
+
+			<!--Main content -->
+			<div class="lateral">
+				<div class="title">
+					<h1>Welcome to my <a href='#' onclick='javascript:window.history.back(-1);return false;'>blog</a></h1>
+				</div>
+
+				<div class="fs">
+					<h3>Start chosing an article to read!</h3>
+				</div>
+
+			
+				{% for artigo in artigos %}
+					<div class="artigo">
+						{% load staticfiles %}
+						<!--
+						#not the convention but works:<a href="{{ artigo.id }}">
+						-->
+						<a href="{% url 'artigo' artigo.id%}">{{ artigo.titulo }}</a>
+
+						<!--
+						<div class="conteudo">{{ artigo.conteudo }}</div>
+						-->
+						<br><br>
+
+						{% empty %}
+							No posts.
+					
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>My blog</title>
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}style_artigo.css">
+	</head>
+
+	<body>
+		<!-- site navigation menu -->
+		<ul class="navbar">
+			<li><a href='javascript:window.history.go(-2);'>Home</a>
+			<li><a href='#' onclick='javascript:window.history.back(-1); return false;'>Articles List</a>
+		</ul>
+
+		<!--Main content -->
+		<div class="lateral">
+			<div class="title">
+				<h1>Welcome to my <a href='javascript: window.history.go(-2);'>blog</a></h1>
+			</div>
+
+			<div class="artigo">
+				<h3>{{ artigo.titulo }}</h3>
+				
+				
+				
+				<div class="conteudo">{{ artigo.conteudo }}</div>
+
+
+				<div class="pub">Published: {{ artigo.publicacao }}</div>
+			</div>
+
+		</div>
+	</body>
+</html>
