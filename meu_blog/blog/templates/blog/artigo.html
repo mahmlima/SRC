@@ -14,18 +14,20 @@
 		<!--Main content -->
 		<div class="lateral">
 			<div class="title">
-				<h1>Welcome to my <a href='#' onclick='javascript:window.history.back(-1); return false;'>blog</a></h1>
+				<h1>Welcome to my <a href='javascript: window.history.go(-2);'>blog</a></h1>
 			</div>
 
 			<div class="artigo">
 				<h3>{{ artigo.titulo }}</h3>
 				
-				<div class="pub"> 
-					<p>{{ artigo.publicacao }}
-				</div>
+				
 				
 				<div class="conteudo">{{ artigo.conteudo }}</div>
+
+
+				<div class="pub">{{ artigo.publicacao }}</div>
 			</div>
+
 		</div>
 	</body>
 </html>
