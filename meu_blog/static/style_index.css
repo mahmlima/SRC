@@ -1,4 +1,3 @@
-
 body {
 	padding-left: 11em;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -27,20 +26,14 @@ ul.navbar {
 
 ul.navbar a {
 	text-decoration: none;
-	/*color: red;*/
 }
 
 ul.navbar a:link{
-	color: red;
+	color: #2C4882;
 }
 
 ul.navbar a:visited {
 	color: #2C4882;
-}
-
-.lateral{
-	position:relative;
-	/*background-color:red;*/
 }
 
 h1{

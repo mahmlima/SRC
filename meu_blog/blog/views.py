@@ -14,7 +14,7 @@ def list_of_articles(request):
 
 def article(request,artigo_id):
 	artigo = Artigo.objects.get(id=artigo_id)
-	return render_to_response('blog/artigo.html',locals())
+	return render_to_response('blog/artigo.html',locals(),context_instance=RequestContext(request))
 
 
 #def index(request):
